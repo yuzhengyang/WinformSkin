@@ -1,0 +1,4 @@
+language: csharp
+script:
+  - nuget restore ClientEngine.sln
+  - xbuild ClientEngine.sln

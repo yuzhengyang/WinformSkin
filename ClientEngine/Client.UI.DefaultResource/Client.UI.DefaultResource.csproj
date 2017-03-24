@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A2020E0-6F85-4E9D-BA54-F31F79D56A8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client.UI.DefaultResource</RootNamespace>
+    <AssemblyName>Client.UI.DefaultResource</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GetDefaultResource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\main_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\FormShadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\none.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\large.png" />
+    <EmbeddedResource Include="Common\separator.png" />
+    <EmbeddedResource Include="Common\small.png" />
+    <EmbeddedResource Include="Common\middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\ellips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\rect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\allbtn_down.png" />
+    <EmbeddedResource Include="Common\allbtn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\close_down.png" />
+    <EmbeddedResource Include="Control\close_normal.png" />
+    <EmbeddedResource Include="Control\close_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\main_tabbtn_down.png" />
+    <EmbeddedResource Include="Control\main_tabbtn_highlight.png" />
+    <EmbeddedResource Include="Control\main_tab_background.png" />
+    <EmbeddedResource Include="Control\main_tab_check.png" />
+    <EmbeddedResource Include="Control\main_tab_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\no_photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Small_Qme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Small_away.png" />
+    <EmbeddedResource Include="Icons\Small_busy.png" />
+    <EmbeddedResource Include="Icons\Small_mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\toolbar_hover.png" />
+    <EmbeddedResource Include="Control\toolbar_normal.png" />
+    <EmbeddedResource Include="Control\toolbar_pushed.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
