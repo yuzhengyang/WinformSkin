@@ -1,16 +1,16 @@
-﻿namespace LayeredSkinDemo
+﻿namespace test
 {
     partial class Form1
     {
         /// <summary>
-        /// 必需的设计器变量。
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 清理所有正在使用的资源。
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,52 +20,58 @@
             base.Dispose(disposing);
         }
 
-        #region Windows 窗体设计器生成的代码
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 设计器支持所需的方法 - 不要修改
-        /// 使用代码编辑器修改此方法的内容。
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.layeredButton1 = new LayeredSkin.Controls.LayeredButton();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // layeredButton1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(108, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.layeredButton1.AdaptImage = true;
+            this.layeredButton1.BackColor = System.Drawing.Color.Transparent;
+            this.layeredButton1.BaseColor = System.Drawing.Color.Black;
+            this.layeredButton1.Canvas = ((System.Drawing.Bitmap)(resources.GetObject("layeredButton1.Canvas")));
+            this.layeredButton1.ControlState = LayeredSkin.Controls.ControlStates.Normal;
+            this.layeredButton1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.layeredButton1.ForeColor = System.Drawing.Color.White;
+            this.layeredButton1.HaloColor = System.Drawing.Color.White;
+            this.layeredButton1.HaloSize = 5;
+            this.layeredButton1.HoverImage = null;
+            this.layeredButton1.Location = new System.Drawing.Point(418, 12);
+            this.layeredButton1.Name = "layeredButton1";
+            this.layeredButton1.NormalImage = null;
+            this.layeredButton1.PressedImage = null;
+            this.layeredButton1.Radius = 0;
+            this.layeredButton1.ShowBorder = true;
+            this.layeredButton1.Size = new System.Drawing.Size(102, 36);
+            this.layeredButton1.TabIndex = 1;
+            this.layeredButton1.Text = "打开图片";
+            this.layeredButton1.TextLocationOffset = new System.Drawing.Point(0, 0);
+            this.layeredButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            this.layeredButton1.TextShowMode = LayeredSkin.TextShowModes.Ordinary;
+            this.layeredButton1.Click += new System.EventHandler(this.layeredButton1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(64)))), ((int)(((byte)(66)))));
-            this.BackgroundImage = global::LayeredSkinDemo.Properties.Resources.planet_univearse_telestial_space_mars;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(722, 203);
-            this.Controls.Add(this.pictureBox1);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(532, 419);
+            this.Controls.Add(this.layeredButton1);
             this.Name = "Form1";
-            this.Opacity = 0.5D;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private LayeredSkin.Controls.LayeredButton layeredButton1;
     }
 }
-

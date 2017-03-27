@@ -40,7 +40,7 @@ namespace Win7AeroForm
                 MARGINS m = new MARGINS();
                 m.Right = -1; //设为负数,则全窗体透明
                 DwmExtendFrameIntoClientArea(this.Handle, ref m); //开启全窗体透明效果
-            } 
+            }
         }
         protected override void OnPaintBackground(PaintEventArgs e)
         {
