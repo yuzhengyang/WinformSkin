@@ -8,20 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TransparentForm.Properties;
 
 namespace TransparentForm
 {
-    public partial class Form1 : Form
+    public partial class GraphicsPathForm : Form
     {
-        public Form1()
+        public GraphicsPathForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void GraphicsPathForm_Load(object sender, EventArgs e)
         {
-            Bitmap bitmap = new Bitmap(Resources.planet);
+            FormBorderStyle = FormBorderStyle.None;
+            Bitmap bitmap = new Bitmap(BackgroundImage);//背景图资源
             this.Region = new Region(GetWindowRegion(bitmap));
         }
         private GraphicsPath GetWindowRegion(Bitmap bitmap)
@@ -35,7 +36,7 @@ namespace TransparentForm
                 for (int nY = 0; nY < bitmap.Height; nY++)
                 {
                     TempColor = bitmap.GetPixel(nX, nY);
-                    if (TempColor.A ==255)//Color.Transparent
+                    if (TempColor.A != 0)//Color.Transparent
                     {
                         gp.AddRectangle(new Rectangle(nX, nY, 1, 1));
                     }

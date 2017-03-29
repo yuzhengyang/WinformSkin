@@ -1,6 +1,6 @@
 ﻿namespace TransparentForm
 {
-    partial class Form1
+    partial class GraphicsPathForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GraphicsPathForm));
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(164, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "不规则窗口 带空间 有锯齿";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // GraphicsPathForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TransparentForm.Properties.Resources.planet;
-            this.ClientSize = new System.Drawing.Size(523, 500);
-            this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(226, 205);
+            this.Name = "GraphicsPathForm";
+            this.Text = "GraphicsPathForm";
+            this.Load += new System.EventHandler(this.GraphicsPathForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
     }
 }
