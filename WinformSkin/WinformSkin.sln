@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldFishProject", "GoldFish
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayeredSkinDemo", "LayeredSkinDemo\LayeredSkinDemo.csproj", "{7B6EB342-3764-45E3-A0E9-5CD553525A17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MousePenetration", "MousePenetration\MousePenetration.csproj", "{F1632955-D0AE-4D09-928B-6C36C68D523F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7B6EB342-3764-45E3-A0E9-5CD553525A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6EB342-3764-45E3-A0E9-5CD553525A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6EB342-3764-45E3-A0E9-5CD553525A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1632955-D0AE-4D09-928B-6C36C68D523F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1632955-D0AE-4D09-928B-6C36C68D523F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1632955-D0AE-4D09-928B-6C36C68D523F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1632955-D0AE-4D09-928B-6C36C68D523F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Simples.QQ;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -14,7 +15,8 @@ namespace Simples
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new QQForm());
         }
     }
 }
