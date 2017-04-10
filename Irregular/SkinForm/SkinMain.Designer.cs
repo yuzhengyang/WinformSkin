@@ -1,6 +1,6 @@
-﻿namespace TransparentForm
+﻿namespace CCWin
 {
-    partial class GraphicsPathForm
+    partial class SkinMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GraphicsPathForm));
             this.SuspendLayout();
             // 
-            // GraphicsPathForm
+            // SkinMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(214, 189);
-            this.Name = "GraphicsPathForm";
-            this.Text = "GraphicsPathForm";
-            this.Load += new System.EventHandler(this.GraphicsPathForm_Load);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ControlBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "SkinMain";
+            this.ShowInTaskbar = false;
+            this.Text = "SkinMain";
+            this.Load += new System.EventHandler(this.SkinMain_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
     }
 }

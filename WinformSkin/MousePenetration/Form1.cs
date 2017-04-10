@@ -47,7 +47,6 @@ namespace MousePenetration
         public void SetPenetrate()
         {
             this.TopMost = true;
-            GetWindowLong(this.Handle, GWL_EXSTYLE);
             SetWindowLong(this.Handle, GWL_EXSTYLE, WS_EX_TRANSPARENT | WS_EX_LAYERED);
             SetLayeredWindowAttributes(this.Handle, 0, 100, LWA_ALPHA);
         }
