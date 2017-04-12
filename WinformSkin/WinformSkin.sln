@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MousePenetration", "MousePe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HollowForm", "HollowForm\HollowForm.csproj", "{AD1D1737-0AC8-424A-8DCD-960B7393DC72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleForm", "DoubleForm\DoubleForm.csproj", "{EF4CDA45-C823-4E36-898D-A7339DD7D82D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleForm", "DoubleForm\DoubleForm.csproj", "{16F35EFF-E0D4-47EF-9824-5BB6CEB2D023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,10 @@ Global
 		{AD1D1737-0AC8-424A-8DCD-960B7393DC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD1D1737-0AC8-424A-8DCD-960B7393DC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD1D1737-0AC8-424A-8DCD-960B7393DC72}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF4CDA45-C823-4E36-898D-A7339DD7D82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF4CDA45-C823-4E36-898D-A7339DD7D82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF4CDA45-C823-4E36-898D-A7339DD7D82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF4CDA45-C823-4E36-898D-A7339DD7D82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F35EFF-E0D4-47EF-9824-5BB6CEB2D023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F35EFF-E0D4-47EF-9824-5BB6CEB2D023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F35EFF-E0D4-47EF-9824-5BB6CEB2D023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F35EFF-E0D4-47EF-9824-5BB6CEB2D023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
