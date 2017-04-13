@@ -347,7 +347,7 @@ namespace CCWin
                 skin = new SkinForm(this);
                 skin.Show();
                 //淡入特效
-                Win32.AnimateWindow(this.Handle, GradientTime, Win32.AW_BLEND | Win32.AW_ACTIVATE);
+                //Win32.AnimateWindow(this.Handle, GradientTime, Win32.AW_CENTER | Win32.AW_ACTIVATE);
             }
             base.OnLoad(e);
         }

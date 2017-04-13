@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,10 +27,13 @@ namespace DoubleForm.View
             Main.Owner = this;//设置控件层的拥有皮肤层
             FormMovableEvent();//激活皮肤层窗体移动
             SetBits();//绘制半透明不规则皮肤
+            Location = new Point(Main.Location.X, Main.Location.Y);//统一控件层和皮肤层的位置
+            Thread.Sleep(1000);
         }
 
         private void SkinForm_Load(object sender, EventArgs e)
         {
+            Thread.Sleep(1000);
         }
 
         #region 减少闪烁
@@ -58,10 +62,10 @@ namespace DoubleForm.View
         }
         public void SetBits()
         {
-            if (Main.BackgroundImage != null)
+            if (BackgroundImage != null)
             {
                 //绘制绘图层背景
-                Bitmap bitmap = new Bitmap(Main.BackgroundImage, base.Width, base.Height);
+                Bitmap bitmap = new Bitmap(BackgroundImage, base.Width, base.Height);
                 if (!Bitmap.IsCanonicalPixelFormat(bitmap.PixelFormat) || !Bitmap.IsAlphaPixelFormat(bitmap.PixelFormat))
                     throw new ApplicationException("图片必须是32位带Alhpa通道的图片。");
                 IntPtr oldBits = IntPtr.Zero;

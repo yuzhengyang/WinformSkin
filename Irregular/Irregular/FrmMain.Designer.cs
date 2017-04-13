@@ -67,6 +67,8 @@
             this.SkinSize = new System.Drawing.Size(302, 586);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "测试窗体：QQ";
+            this.TransparencyKey = System.Drawing.SystemColors.Control;
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

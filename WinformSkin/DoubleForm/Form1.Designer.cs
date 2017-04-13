@@ -104,7 +104,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(474, 176);
+            this.button7.Location = new System.Drawing.Point(430, 179);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 8;
@@ -113,7 +113,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(436, 134);
+            this.button8.Location = new System.Drawing.Point(392, 137);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 7;
@@ -185,7 +185,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(529, 391);
+            this.button16.Location = new System.Drawing.Point(453, 391);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 17;
@@ -194,7 +194,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(491, 349);
+            this.button17.Location = new System.Drawing.Point(436, 349);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 16;
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoubleForm.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(660, 465);
+            this.ClientSize = new System.Drawing.Size(596, 465);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
@@ -235,6 +235,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.SystemColors.Control;
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,19 +20,19 @@ namespace DoubleForm.View
             //SetStyles();//减少闪烁
             ShowInTaskbar = false;//禁止控件层显示到任务栏
             FormBorderStyle = FormBorderStyle.None;//设置无边框的窗口样式
+            Thread.Sleep(1000);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {
-                Skin = new SkinForm(this);//创建皮肤层
-                Skin.Show();//显示皮肤层
-                Skin.Location = new Point(Location.X, Location.Y);//统一控件层和皮肤层的位置
+                Skin = new SkinForm(this);//创建皮肤层 
+                BackgroundImage = null;//去除控件层背景
+                TransparencyKey = BackColor;//使控件层背景透明
+                Skin.Show();//显示皮肤层 
             }
-            BackgroundImage = null;//去除控件层背景
-            TransparencyKey = BackColor;//使控件层背景透明
-
+            Thread.Sleep(1000);
         }
 
         #region 属性

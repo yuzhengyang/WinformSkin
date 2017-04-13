@@ -15,7 +15,7 @@ namespace Irregular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmIphone());
+            Application.Run(new FrmMain());
         }
     }
 }

@@ -22,5 +22,10 @@ namespace Irregular
             FrmCF frm = new FrmCF();
             frm.Show();
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            Win32.AnimateWindow(this.Handle, 1000, Win32.AW_CENTER | Win32.AW_ACTIVATE);
+        }
     }
 }
