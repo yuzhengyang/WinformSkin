@@ -20,7 +20,6 @@ namespace DoubleForm.View
             //SetStyles();//减少闪烁
             ShowInTaskbar = false;//禁止控件层显示到任务栏
             FormBorderStyle = FormBorderStyle.None;//设置无边框的窗口样式
-            Thread.Sleep(1000);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -32,7 +31,6 @@ namespace DoubleForm.View
                 TransparencyKey = BackColor;//使控件层背景透明
                 Skin.Show();//显示皮肤层 
             }
-            Thread.Sleep(1000);
         }
 
         #region 属性

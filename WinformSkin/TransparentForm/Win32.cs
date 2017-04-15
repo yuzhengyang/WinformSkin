@@ -6,13 +6,6 @@
 
 using System;
 using System.Runtime.InteropServices;
-using System.ComponentModel;
-using System.Text;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using System.Windows.Forms;
-using System.Collections;
 
 /// <summary>
 /// Wind32API
@@ -125,14 +118,4 @@ internal class Win32
 
     [DllImport("user32")]
     public static extern int SendMessage(IntPtr hwnd, int msg, int wp, int lp);
-
-    #region 窗体边框阴影效果变量申明
-    public const int CS_DropSHADOW = 0x20000;
-    public const int GCL_STYLE = (-26);
-    //声明Win32 API
-    [DllImport("user32.dll", CharSet = CharSet.Auto)]
-    public static extern int SetClassLong(IntPtr hwnd, int nIndex, int dwNewLong);
-    [DllImport("user32.dll", CharSet = CharSet.Auto)]
-    public static extern int GetClassLong(IntPtr hwnd, int nIndex);
-    #endregion
 }
