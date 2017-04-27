@@ -20,16 +20,17 @@ namespace DoubleForm.View
             //SetStyles();//减少闪烁
             ShowInTaskbar = false;//禁止控件层显示到任务栏
             FormBorderStyle = FormBorderStyle.None;//设置无边框的窗口样式
+            TransparencyKey = BackColor;//使控件层背景透明
         }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             if (!DesignMode)
             {
+                Opacity = 0;
                 Skin = new SkinForm(this);//创建皮肤层 
                 BackgroundImage = null;//去除控件层背景
-                TransparencyKey = BackColor;//使控件层背景透明
                 Skin.Show();//显示皮肤层 
+                AnimateShow();
             }
         }
 
@@ -64,5 +65,20 @@ namespace DoubleForm.View
             base.AutoScaleMode = AutoScaleMode.None;
         }
         #endregion
+        private void AnimateShow()
+        {
+            Task.Factory.StartNew(() =>
+            {
+                for (int i = 0; i <= 10; i++)
+                {
+                    BeginInvoke(new Action(() =>
+                    {
+                        Opacity = i / 10.0;
+                        Skin.SetBits();
+                    }));
+                    Thread.Sleep(25);
+                }
+            });
+        }
     }
 }

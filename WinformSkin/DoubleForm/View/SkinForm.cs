@@ -16,23 +16,22 @@ namespace DoubleForm.View
         private MainForm Main;
         public SkinForm(MainForm main)
         {
-        InitializeComponent();
-        SetStyles();//减少闪烁
-        Main = main;//获取控件层对象
-        FormBorderStyle = FormBorderStyle.None;//设置无边框的窗口样式
-        ShowInTaskbar = true;//使控件层显示到任务栏
-        BackgroundImage = Main.BackgroundImage;//将控件层背景图应用到皮肤层
-        BackgroundImageLayout = ImageLayout.Stretch;//自动拉伸背景图以适应窗口
-        Size = Main.Size;//统一大小
-        Main.Owner = this;//设置控件层的拥有皮肤层
-        FormMovableEvent();//激活皮肤层窗体移动
-        SetBits();//绘制半透明不规则皮肤
-        Location = new Point(Main.Location.X, Main.Location.Y);//统一控件层和皮肤层的位置
+            InitializeComponent();
+            SetStyles();//减少闪烁
+            Main = main;//获取控件层对象
+            FormBorderStyle = FormBorderStyle.None;//设置无边框的窗口样式
+            ShowInTaskbar = true;//使控件层显示到任务栏
+            BackgroundImage = Main.BackgroundImage;//将控件层背景图应用到皮肤层
+            BackgroundImageLayout = ImageLayout.Stretch;//自动拉伸背景图以适应窗口
+            Size = Main.Size;//统一大小
+            Main.Owner = this;//设置控件层的拥有皮肤层
+            FormMovableEvent();//激活皮肤层窗体移动
+            SetBits();//绘制半透明不规则皮肤
+            Location = new Point(Main.Location.X, Main.Location.Y);//统一控件层和皮肤层的位置
         }
 
         private void SkinForm_Load(object sender, EventArgs e)
-        {
-        }
+        { }
 
         #region 减少闪烁
         private void SetStyles()
@@ -97,6 +96,7 @@ namespace DoubleForm.View
                     }
                     Win32.ReleaseDC(IntPtr.Zero, screenDC);
                     Win32.DeleteDC(memDc);
+                    bitmap.Dispose();
                 }
             }
         }
